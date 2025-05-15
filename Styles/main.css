@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+:root {
+  --red-theme: #df4957;
+}
+.header {
+  width: 100%;
+  background-color: var(--red-theme);
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+}
+.header .logo {
+  display: inline-flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.header .logo span {
+  font-weight: bold;
+  font-size: 2rem;
+}
+.header .logo i {
+  font-size: 3rem;
+}
+.header .links {
+  display: flex;
+  list-style: none;
+  gap: 1.8rem;
+}
+.header .links a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 20px;
+  transition: 0.5s ease;
+}
+.header .links a:hover {
+  background-color: #9e333e6e;
+  color: #f1f1f1;
+}
