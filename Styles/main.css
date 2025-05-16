@@ -5,12 +5,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
 :root {
   --red-theme: #df4957;
 }
+
 .header {
   width: 100%;
   background-color: var(--red-theme);
@@ -20,33 +23,129 @@ body {
   align-items: center;
   color: #ffffff;
 }
+
 .header .logo {
   display: inline-flex;
   gap: 20px;
   align-items: center;
 }
 
-.header .logo span {
+.header .logo h1 {
   font-weight: bold;
   font-size: 2rem;
 }
+/* Github icon */
 .header .logo i {
-  font-size: 3rem;
+  font-size: 2rem;
 }
+
 .header .links {
   display: flex;
   list-style: none;
   gap: 1.8rem;
 }
+
 .header .links a {
   text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: #ffffff;
   padding: 10px;
   border-radius: 20px;
   transition: 0.5s ease;
 }
+
 .header .links a:hover {
-  background-color: #9e333e6e;
-  color: #f1f1f1;
+  color: #d6fc89;
+}
+
+/* Hamburger menu styles */
+.nav-toggle {
+  display: none;
+}
+/* Hamburger menu icon */
+.nav-toggle-label {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+}
+/* Menu icon transition */
+.nav-toggle-label i {
+  position: absolute;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.nav-toggle-label .fa-bars {
+  opacity: 1;
+  transform: rotate(0deg);
+}
+.nav-toggle-label .fa-times {
+  opacity: 0;
+  transform: rotate(-180deg);
+}
+.nav-toggle:checked ~ .nav-toggle-label .fa-bars {
+  opacity: 0;
+  transform: rotate(180deg);
+}
+.nav-toggle:checked ~ .nav-toggle-label .fa-times {
+  opacity: 1;
+  transform: rotate(0deg);
+}
+
+@media (max-width: 768px) {
+  .nav-toggle-label {
+    display: block;
+  }
+
+  .header .links {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: var(--red-theme);
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  .nav-toggle:checked ~ .links {
+    display: flex;
+  }
+
+  .header .links a {
+    font-size: 1.5rem;
+    padding: 15px;
+    width: 80%;
+    text-align: center;
+  }
+
+  .header {
+    padding: 15px 20px;
+    position: relative;
+  }
+
+  .header .logo span {
+    font-size: 1.5rem;
+  }
+
+  .header .logo i {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header .logo span {
+    font-size: 1.2rem;
+  }
+
+  .header .logo i {
+    font-size: 1.8rem;
+  }
+
+  .header .links a {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
 }
