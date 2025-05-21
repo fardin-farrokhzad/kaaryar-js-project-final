@@ -11,5 +11,28 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <i class="fa fa-github"></i>
+        <h1>Github Search</h1>
+      </div>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="nav-toggle-label">
+        <i class="fa fa-bars"></i>
+        <i class="fa fa-times"></i>
+      </label>
+      <ul class="links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Pages/weather.html" target="_blank">Weather</a></li>
+        <li><a href="Pages/clock.html" target="_blank">Clock</a></li>
+      </ul>
+    </header>
+    <main class="main">
+      <div id="contents">
+        <div class="loader"></div>
+      </div>
+    </main>
+    <script src="../Scripts/user.js"></script>
+  </body>
 </html>
