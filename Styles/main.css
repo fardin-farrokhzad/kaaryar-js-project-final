@@ -13,7 +13,7 @@ body {
 :root {
   --red-theme: #df4957;
 }
-
+/* Header */
 .header {
   width: 100%;
   background-color: var(--red-theme);
@@ -23,7 +23,7 @@ body {
   align-items: center;
   color: #ffffff;
 }
-
+/* Header logo container */
 .header .logo {
   display: inline-flex;
   gap: 20px;
@@ -38,7 +38,7 @@ body {
 .header .logo i {
   font-size: 2rem;
 }
-
+/* Header links */
 .header .links {
   display: flex;
   list-style: none;
@@ -114,7 +114,7 @@ body {
 /* Search box */
 .main .form-control .search {
   padding: 0.5rem 1.3rem;
-  border-radius: 1.5rem;
+  border-radius: 5px;
   border: 1px solid #acabab;
   font-size: 1.15rem;
 }
@@ -122,7 +122,7 @@ body {
 .main .form-control .submit {
   padding: 0.5rem;
   font-size: 1.15rem;
-  border-radius: 1.5rem;
+  border-radius: 5px;
   border: none;
   background-color: #1f231d;
   color: #ffffff;
@@ -136,9 +136,12 @@ body {
   display: none;
   padding: 0.5rem;
   font-size: 1.15rem;
-  border-radius: 1.5rem;
+  border-radius: 5px;
   border: none;
   transition: 0.5s ease;
+}
+#clear.show {
+  display: block;
 }
 .main .form-control .clear:hover {
   background-color: #a0a0a0;
@@ -174,6 +177,55 @@ body {
 .loader::after {
   opacity: 0.83;
   transform: rotate(60deg);
+}
+/* User boxes */
+#contents {
+  width: 100%;
+  max-width: 90rem;
+  padding: 3rem 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+/* Each user */
+.box-container {
+  flex: 300px 0 1;
+  min-width: 20rem;
+
+  min-height: 19rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 9px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+/* Username */
+.box-container span {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+/* User link */
+.box-container a {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #1f231d;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  transition: 0.5s ease;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.box-container a:hover {
+  opacity: 0.5;
+}
+.box-container .image-wrapper img {
+  width: 100px;
+  justify-self: 100px;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 /* Loader animation */
 @keyframes spin {
