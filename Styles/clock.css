@@ -1,0 +1,32 @@
+.header {
+  background-color: #54f07b;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  gap: 1rem;
+  margin: 0;
+}
+#clockCanvas {
+  border: 10px solid #a0a0a0;
+  border-radius: 50%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+#digitalClock {
+  margin-top: 20px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 3rem;
+  font-weight: bold;
+
+  color: #000;
+}
+@media (max-width: 768px) {
+  .header .links {
+    background-color: #54f07b;
+  }
+}
