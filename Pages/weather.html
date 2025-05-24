@@ -31,6 +31,23 @@
         <li><a href="./clock.html">Clock</a></li>
       </ul>
     </header>
+    <main class="main">
+      <form class="form-control">
+        <input
+          type="text"
+          placeholder="Search Cities..."
+          class="search"
+          id="search"
+        />
+        <button type="submit" class="submit" id="submit">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </button>
+        <button type="reset" class="clear" id="clear">
+          <i class="fas fa-undo"></i>
+        </button>
+      </form>
+      <div id="contents"></div>
+    </main>
     <script src="../Scripts/weather.js"></script>
   </body>
 </html>

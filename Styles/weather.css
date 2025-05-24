@@ -1,8 +1,62 @@
+body {
+  background: #1488cc;
+  background: -webkit-linear-gradient(to right, #1488cc, #2b32b2);
+  background: linear-gradient(to right, #1488cc, #2b32b2);
+}
 .header {
-  background-color: #549df0;
+  background-color: #001f42;
+}
+/* Main */
+.main {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+/* Form */
+.main .form-control {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 50rem;
+  padding: 20px;
+  gap: 10px;
+}
+/* Search input */
+.search {
+  width: 100%;
+  padding: 0.6rem 20px;
+  border: none;
+  outline: none;
+  border-radius: 1rem;
+}
+.search:focus {
+  outline: 2px solid #001f42;
+}
+/* Search button */
+.submit {
+  font-size: 1.2rem;
+  padding: 5px 8px;
+  border: none;
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+/* Clear button */
+.clear {
+  display: none;
+  font-size: 1.2rem;
+  padding: 5px 8px;
+  border: none;
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+#clear.show {
+  display: block;
 }
 @media (max-width: 768px) {
   .header .links {
-    background-color: #549df0;
+    background-color: #001f42;
   }
 }
