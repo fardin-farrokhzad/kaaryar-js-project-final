@@ -47,7 +47,6 @@ async function fetchUsers(query) {
     clearBtn.classList.add("show");
   } catch (err) {
     contents.innerHTML = `<p class="error">Something went wrong. ${err.message}</p>`;
-    console.error(err);
   }
 }
 

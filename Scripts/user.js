@@ -87,7 +87,6 @@ document.addEventListener("DOMContentLoaded", () => {
       document.getElementById("repo-list").innerHTML = renderRepos(repos);
     } catch (error) {
       contents.innerHTML = `<p>Something went wrong. Could not fetch data.</p>`;
-      console.error(error);
     }
   }
   // Fetch user's data when page loads
