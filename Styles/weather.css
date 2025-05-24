@@ -1,0 +1,8 @@
+.header {
+  background-color: #549df0;
+}
+@media (max-width: 768px) {
+  .header .links {
+    background-color: #549df0;
+  }
+}

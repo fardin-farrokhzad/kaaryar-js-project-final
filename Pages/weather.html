@@ -4,9 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather</title>
+    <link rel="stylesheet" href="../Styles/common.css" />
     <link rel="stylesheet" href="../Styles/weather.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
+    <header class="header">
+      <div class="logo">
+        <i class="fas fa-cloud-sun"></i>
+        <h1>Weather</h1>
+      </div>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="nav-toggle-label">
+        <i class="fa fa-bars"></i>
+        <i class="fa fa-times"></i>
+      </label>
+      <ul class="links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./weather.html">Weather</a></li>
+        <li><a href="./clock.html">Clock</a></li>
+      </ul>
+    </header>
     <script src="../Scripts/weather.js"></script>
   </body>
 </html>
