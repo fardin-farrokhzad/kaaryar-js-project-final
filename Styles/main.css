@@ -70,8 +70,9 @@ body {
 }
 .error {
   display: none;
-  padding: 1rem;
-  background-color: #e0e0e0;
+  padding: 0.85rem;
+  background-color: #e7e7e7;
+  border-radius: 5px;
 }
 .error i {
   padding: 2px;
