@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="./Styles/main.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
   </head>
   <body>
@@ -16,7 +19,7 @@
     <header class="header">
       <div class="logo">
         <!-- Github logo -->
-        <i class="fa fa-github"></i>
+        <i class="fa-brands fa-github"></i>
         <!-- Title -->
         <h1>Github Search</h1>
       </div>
@@ -36,6 +39,12 @@
     <!-- Main -->
     <main class="main">
       <form class="form-control">
+        <div class="error" id="error">
+          <span
+            ><i class="fa-solid fa-exclamation-circle"></i> Please enter
+            something.</span
+          >
+        </div>
         <!-- Search box -->
         <input
           type="text"

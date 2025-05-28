@@ -2,7 +2,7 @@ const form = document.querySelector(".form-control");
 const searchInput = document.getElementById("search");
 const clearBtn = document.getElementById("clear");
 const contents = document.getElementById("contents");
-
+const error = document.getElementById("error");
 // Show loader inside #contents
 function showLoader() {
   contents.innerHTML = `<div class="loader"></div>`;
@@ -56,7 +56,7 @@ form.addEventListener("submit", (e) => {
 
   const query = searchInput.value.trim();
   if (!query) {
-    contents.innerHTML = `<p>Please enter a username</p>`;
+    showError();
     return;
   }
 
@@ -69,3 +69,8 @@ clearBtn.addEventListener("click", () => {
   contents.innerHTML = "";
   clearBtn.classList.remove("show");
 });
+// Error message box
+function showError() {
+  error.classList.add("show");
+  setTimeout(() => error.classList.remove("show"), 3000);
+}

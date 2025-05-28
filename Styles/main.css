@@ -25,7 +25,7 @@ body {
 /* Form */
 .main .form-control {
   width: 100%;
-  max-width: 90rem;
+  max-width: 80rem;
   padding: 20px;
   margin-bottom: 2rem;
   display: flex;
@@ -67,6 +67,17 @@ body {
 .main .form-control .clear:hover {
   background-color: #a0a0a0;
   color: #ffffff;
+}
+.error {
+  display: none;
+  padding: 1rem;
+  background-color: #e0e0e0;
+}
+.error i {
+  padding: 2px;
+}
+#error.show {
+  display: block;
 }
 /* User boxes */
 #contents {
